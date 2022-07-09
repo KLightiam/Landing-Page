@@ -5,23 +5,36 @@
     margin: 0;
 }
 
-.header {
-    background-color: #1f2937;
-    height: 400px;
+.whole-page {
     display: flex;
     flex-direction: column;
+    height: 100vh;
+}
+
+.header {
+    background-color: #1f2937;
+    height: 700px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: flex-end;
 }
 
 .nav-bar img{
-    height: 50px;
+    height: auto;
     width: 50px;
-    /* flex-shrink: 0; */
+    flex-shrink: 0;
+}
+
+.logo span{
+    font-weight: bolder;
+    color: green;
+    font-size: 18px;
 }
 
 .nav-bar {
     display: flex;
     justify-content: space-between;
-    flex: auto;
+    /* flex: auto; */
 }
 
 ul {
@@ -54,15 +67,22 @@ a {
     display: flex;
     justify-content: space-between;
     flex: auto;
+    align-items: center;
+    gap: 25px;
 }
 
 .nav-content-right img{
    height: auto;
-   width:500px;
+   width:800px;
 }
 
 .nav {
-    margin-left: 200px;
+    /* margin-left: 200px;
+    margin-right: 50px; */
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
     margin-right: 50px;
 }
 
@@ -77,15 +97,30 @@ a {
     border-radius: 8px;
 }
 
+.main {
+    flex:auto;
+}
+
 .main-top {
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* margin-top: 20px; */
+    justify-content: center;
+    height: 500px;
+    gap: 50px;
 }
+
+.main-top h1{
+     font-size: 36px;
+     font-weight: bolder;
+     color: #1f2937;
+} 
 
 .main-top-content {
     display: flex;
-    gap: 15px;
+    gap: 25px;
+    align-self: center;
 
 }
 
@@ -94,6 +129,10 @@ a {
     height: 300px;
     border-radius: 8px;
     /* border-color: #3882f6 solid; */
+}
+
+.main-tc p {
+    text-align: center;
 }
 
 .main-mid {
@@ -110,11 +149,21 @@ a {
 .main-mid-sub {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    width: 700px;
 
+}
+
+.main-mid-sub p:first-child{
+    font-style: italic;
+    color: #1f2937;
+    font-size: 36px;
 }
 
 .main-mid p:last-child {
     align-self: flex-end;
+    font-weight: bolder;
+    font-size: 36px;
 }
 
 .main-bottom {
@@ -155,6 +204,8 @@ a {
     justify-content: center;
     align-items: center;
     color: #f9faf8;
+    /* margin-top: auto; */
+    flex-shrink: 0;
 }
 
 .main-bottom button {
